@@ -40,4 +40,5 @@ done
 echo -e "\e[32mDone\e[0m"
 fi
 done
+
 rm -rf $TMP_FILE
