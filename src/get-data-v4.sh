@@ -21,7 +21,7 @@ OID_TXATT="SNMPv2-SMI::enterprises.2544.1.11.7.7.2.3.1.10"
 # Settings
 COMMUNITY="public"
 TIMEOUT_SEC=1
-RETRIES=1
+RETRIES=2
 THRESHOLD_DIFF=5   # Selisih kenaikan dibanding default.csv
 THRESHOLD_MAX=32   # Nilai absolut maksimal RXATT
 
