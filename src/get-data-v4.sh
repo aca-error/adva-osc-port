@@ -177,10 +177,10 @@ grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" "$IP_FILE" | while read -r IP; do
                 COMMENT="${COMMENT}RXATT > ${THRESHOLD_MAX}dB ($RXATT)"
                 
                 # Tampilkan pesan Critical di terminal
-                echo -e "\n\e[31m[CRITICAL]\e[0m IP: $IP Port: $PORTNAME RXATT kritis: $RXATT"
+                printf "\e[31m[CRITICAL]\e[0m IP: $IP Port: $PORTNAME RXATT kritis: $RXATT dB"
             elif [[ -n "$COMMENT" ]]; then
                 # Tampilkan pesan Warning jika hanya kenaikan selisih
-                echo -e "\n\e[33m[WARNING]\e[0m IP: $IP Port: $PORTNAME RXATT naik $DIFF dB"
+                printf "\e[33m[WARNING]\e[0m IP: $IP Port: $PORTNAME RXATT naik $DIFF dB"
             fi
         fi
 
@@ -197,4 +197,4 @@ grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" "$IP_FILE" | while read -r IP; do
 
 done
 
-echo "Selesai. File hasil: $OUT_FILE"
+echo -e "Selesai. File hasil: $OUT_FILE"
