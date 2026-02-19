@@ -3,7 +3,6 @@
 # ==========================================
 # KONFIGURASI
 # ==========================================
-# Perbaikan pada baris ini (tanda kurung ditutup dengan benar)
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 IP_FILE="$SCRIPT_DIR/ip.profile"
 DEFAULT_FILE="$SCRIPT_DIR/default.csv"
